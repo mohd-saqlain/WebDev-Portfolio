@@ -15,14 +15,14 @@ const Footer = () => {
           </Col>
           <Col size={12} md={4} className="text-md-end text-center">
             <div className="social-icon">
-              <a href="#">
+              <a target="_blank" href="https://www.linkedin.com/in/mohd-saqlain-webdev">
                 <i class="bi bi-linkedin" id="f-icons"></i>
               </a>
-              <a href="#">
+              <a target="_blank" href="https://www.github.com/mohd-saqlain">
                 {" "}
                 <i class="bi bi-github" id="f-icons"></i>
               </a>
-              <a href="#">
+              <a target="_blank" href="https://www.instagram.com/in/saqlain.aly">
                 <i class="bi bi-instagram" id="f-icons"></i>
               </a>
             </div>
