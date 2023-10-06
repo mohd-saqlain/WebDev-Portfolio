@@ -38,13 +38,13 @@ const NavBar = () => {
           </Nav>
           <span className="navbar-text ">
             <div className="social-icon">
-              <a href="#">
+              <a target="_blank" href="https://www.linkedin.com/in/mohd-saqlain-webdev">
                 <i class="bi bi-linkedin" id="icons"></i>
               </a>
-              <a href="#">
+              <a target="_blank" href="https://www.github.com/mohd-saqlain">
                 <i class="bi bi-github" id="icons"></i>
               </a>
-              <a href="#">
+              <a target="_blank" href="https://www.instagram.com/saqlain.aly">
                 <i class="bi bi-instagram" id="icons"></i>
               </a>
             </div>
