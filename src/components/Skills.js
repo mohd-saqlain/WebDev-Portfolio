@@ -6,6 +6,14 @@ import meter1 from "../Assests/images/meter1.svg";
 import meter2 from "../Assests/images/meter2.svg";
 import meter3 from "../Assests/images/meter3.svg";
 import ColorSharp from "../Assests/images/color-sharp.png";
+import {
+  BiLogoHtml5,
+  BiLogoCss3,
+  BiLogoJavascript,
+  BiLogoReact,
+  BiLogoBootstrap,
+  BiLogoRedux,
+} from "react-icons/bi";
 
 const responsive = {
   superLargeDesktop: {
@@ -26,6 +34,14 @@ const responsive = {
     items: 1,
   },
 };
+const skillData = [
+  BiLogoHtml5,
+  BiLogoCss3,
+  BiLogoBootstrap,
+  BiLogoJavascript,
+  BiLogoReact,
+  BiLogoRedux,
+];
 const Skills = () => {
   return (
     <section className="skill" id="skills">
@@ -41,7 +57,7 @@ const Skills = () => {
                 frontend technologies and trends to provide the best possible
                 solutions for my clients.
               </p>
-              <Carousel
+              {/* <Carousel
                 responsive={responsive}
                 infinite={true}
                 className="skills-slider"
@@ -58,7 +74,17 @@ const Skills = () => {
                   <img src={meter2} alt="" />
                   <h5>React.js</h5>
                 </div>
-              </Carousel>
+              </Carousel> */}
+
+              <Row className="justify-content-around">
+                {skillData.map((skill, ind) => (
+                  <Col md={4} xs={6} key={ind}>
+                    <div className="m-4 bg-primary py-4 rounded">
+                      {React.createElement(skill,{style:{fontSize: "5rem"}})}
+                    </div>
+                  </Col>
+                ))}
+              </Row>
             </div>
           </Col>
         </Row>
